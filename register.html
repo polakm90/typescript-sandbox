@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+      <script>
+          window.values= {
+          };
+          window.ck={
+            get: (key) => window.values[key]
+          };
+        </script>
+    <script src="./src/user/register/main.ts"></script>
+    <div class="container js-register-component p-4">
+      <div class="alert small alert-success d-none js-success-alert" role="alert">
+        Sucessfully register :)
+      </div>
+      <div class="alert small alert-warning d-none js-warning-alert" role="alert">
+          Somthing wrong :(
+        </div>
+    <div class="box">
+        <div class="text-center js-loading">
+            <div class="spinner-grow" role="status">
+            </div>
+          </div>
+      <h3 class="header js-header">Register new user</h5>
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="row p-2">
+                <h6 class="card-title">User data</h5>
+              <div>
+              <hr class="my-0">
+                <div class="card-body">
+                <dl class="row">
+                  <dt class="col-4">Full name</dt>
+                  <dd class="col-8">
+                    <input
+                    data-default= "Jack Sparrow"
+                    type="text"
+                    class="form-control js-name"
+                    id="user-name"
+                    placeholder="Enter user name"
+                  />
+                  <small
+                  id="name-error"
+                  class="form-text text-danger d-none js-name-error"
+                  >Invalid value</small>
+                </dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-4">Mail</dt>
+                  <dd class="col-8">                    
+                    <input
+                    data-default = "contact@sparrow.com"
+                    type="text"
+                    class="form-control js-email"
+                    id="user-email"
+                    placeholder="Enter your email"
+                  />
+                  <small
+                  id="email-error"
+                  class="form-text text-danger d-none js-email-error"
+                  >Invalid value</small>
+                </dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-4">Website</dt>
+                  <dd class="col-8"> 
+                    <input
+                      type="text"
+                      data-default= "sparrow.com"
+                      class="form-control js-website"
+                      id="user-website"
+                      placeholder="Enter your website"
+                  />
+                  <small
+                  id="website-error"
+                  class="form-text text-danger d-none js-website-error"
+                  >Invalid value</small>
+                </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+            </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="row p-2">
+                <h6 class="card-title">Address</h5>
+              <div>
+              <hr class="my-0">
+                <div class="card-body">
+                <dl class="row">
+                  <dt class="col-4">Street</dt>
+                  <dd class="col-8">
+                    <input
+                    data-default = "Pirate Island 20"
+                    type="text"
+                    class="form-control js-street"
+                    id="user-street"
+                    placeholder="Enter your street"
+                  />
+                </dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-4">City</dt>
+                  <dd class="col-8">
+                    <input
+                    data-default = "Blue Ocean"
+                    type="text"
+                    class="form-control js-city"
+                    id="user-city"
+                    placeholder="Enter your city"
+                  />
+                </dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-4">Postal code</dt>
+                  <dd class="col-8">                    
+                    <input
+                    data-default = "653456"
+                    type="text"
+                    class="form-control js-postal-code"
+                    id="user-postal-code"
+                    placeholder="Enter your postal code"
+                  /></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="row p-2">
+                <h6 class="card-title">User phone</h5>
+              <div>
+              <hr class="my-0">
+                <div class="card-body">
+                <dl class="row">
+                  <dt class="col-4">Phone</dt>
+                  <dd class="col-8">                    
+                    <input
+                    data-default = "+222 543 654 345"
+                    type="text"
+                    class="form-control js-phone"
+                    id="user-phone"
+                    placeholder="Enter your phone number"
+                  /></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+<div class="row mt-4">
+  <div class="col-12">
+      <button type="button" class="float-end btn btn-primary js-register-button">
+        Register user
+      </button>
+    </div>
+  </div>
+    </div>
+  </body>
+</html>
